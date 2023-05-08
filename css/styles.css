@@ -1,5 +1,7 @@
 body {
     width: 1440px;
+    color: var(--text);
+    background-color: var(--white-background);
 }
 
 h1 {
@@ -20,27 +22,27 @@ h2 {
     color: #2E2F42;
 }
 
-h3 {
+h3,
+.about {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #2E2F42;
+    color: var(--dark);
+    letter-spacing: 0.02em;
 }
 
-button {
+/* button {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
     color: #2E2F42;
     cursor: pointer;
-}
+} */
 
 header {
     width: 100%;
@@ -49,9 +51,16 @@ header {
     display: inline;
 }
 
-/* [href="./index.html"] {
-    
-} */
+.web {
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    color: var(--brand-color);
+}
 
 :root {
     --brand-color: #4D5AE5;
@@ -69,8 +78,24 @@ header {
 }
 
 .logo {
-    color: var(--brand-color);
+    color: var(--dark);
 
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav-menu {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
 }
 
 .filters-button {
@@ -78,27 +103,137 @@ header {
     background-color: var(--light);
     border: 1px solid var(--accent);
     border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .filters-button:hover,
 .filters-button:focus {
     background-color: var(--pressed-state);
     color: var(--white-background);
+    cursor: pointer;
 }
 
-address li a {
+.address li a {
     font-style: normal;
     color: var(--text);
     text-decoration: none;
 }
 
+.mail {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
 address li a:hover {
     color: var(--pressed-state);
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: var(--text);
 }
-nav li a:hover{
+
+nav li a:hover {
     color: var(--pressed-state);
+}
+
+.order-button {
+    background-color: var(--brand-color);
+    color: var(--white-background);
+    box-sizing: border-box;
+    width: 169px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+}
+
+.section {
+    background-color: var(--dark);
+}
+
+.main-text {
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-background);
+}
+
+.order-button {
+    background-color: var(--brand-color);
+    color: var(--white-background);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.order-button:hover {
+    background-color: var(--pressed-state);
+}
+
+/* .order-button:focus {
+    background-color: var(--pressed-state);
+} */
+
+.paragraph {
+    color: var(--text);
+}
+
+.section-3 {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+.section-4 {
+    background-color: var(--light);
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.logo-footer {
+    color: var(--light);
+}
+
+.paragraph-footer {
+    color: var(--light);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.11;
+}
+
+.spec {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+}
+
+.func {
+    font-size: 16px;
+    line-height: 1.5;
+    /* text-align: center; */
+    letter-spacing: 0.02em;
+    /* text-transform: capitalize; */
+    color: var(--text);
 }
