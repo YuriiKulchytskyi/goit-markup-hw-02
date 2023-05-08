@@ -2,6 +2,13 @@ body {
     width: 1440px;
     color: var(--text);
     background-color: var(--white-background);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
 }
 
 h1 {
