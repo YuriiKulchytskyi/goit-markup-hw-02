@@ -114,7 +114,10 @@ header {
     color: var(--text);
 }
 
-address li a:hover,
+address li a:hover {
+    color: var(--pressed-state);
+}
+
 address li a:focus {
     color: var(--pressed-state);
 }
