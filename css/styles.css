@@ -2,35 +2,26 @@ body {
     width: 1440px;
     color: var(--text);
     background-color: var(--white-background);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #2E2F42;
+    color: var(--text);
     letter-spacing: 0.02em;
 }
 
-h1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-    color: #2E2F42;
-}
 
-h2 {
+/* h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     color: #2E2F42;
-}
+} */
 
-h3,
-.about {
+/* h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -38,7 +29,7 @@ h3,
     line-height: 24px;
     color: var(--dark);
     letter-spacing: 0.02em;
-}
+} */
 
 /* button {
     font-family: 'Roboto';
@@ -59,12 +50,12 @@ header {
 }
 
 .web {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color);
 }
@@ -102,25 +93,12 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text);
+    color: var(--dark);
+    text-decoration: none;
 }
 
-.filters-button {
-    color: var(--brand-color);
-    background-color: var(--light);
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-}
-
-.filters-button:hover,
-.filters-button:focus {
-    background-color: var(--pressed-state);
-    color: var(--white-background);
-    cursor: pointer;
+.address {
+    font-style: normal;
 }
 
 .address li a {
@@ -136,7 +114,8 @@ header {
     color: var(--text);
 }
 
-address li a:hover {
+address li a:hover,
+address li a:focus {
     color: var(--pressed-state);
 }
 
@@ -168,7 +147,7 @@ nav li a:hover {
 }
 
 .section {
-    background-color: var(--dark);
+    background-color: var(--hero-background);
 }
 
 .main-text {
@@ -176,6 +155,8 @@ nav li a:hover {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-background);
+    font-weight: 700;
+    font-size: 56px;
 }
 
 .order-button {
@@ -184,23 +165,33 @@ nav li a:hover {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
     background-color: var(--pressed-state);
 }
 
-/* .order-button:focus {
-    background-color: var(--pressed-state);
-} */
+.about {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dark);
+    letter-spacing: 0.02em;
+}
 
 .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--text);
+
 }
 
-.section-3 {
+.about-section {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -209,8 +200,12 @@ nav li a:hover {
     color: var(--dark);
 }
 
-.section-4 {
+.our-team {
     background-color: var(--light);
+}
+
+.person {
+    background-color: var(--white-background);
 }
 
 .footer {
@@ -243,4 +238,23 @@ nav li a:hover {
     letter-spacing: 0.02em;
     /* text-transform: capitalize; */
     color: var(--text);
+}
+
+.filters-button {
+    color: var(--brand-color);
+    background-color: var(--light);
+    border: 1px solid var(--accent);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+    background-color: var(--pressed-state);
+    color: var(--white-background);
+    cursor: pointer;
 }
