@@ -127,7 +127,8 @@ nav li a {
     color: var(--text);
 }
 
-nav li a:hover {
+nav li a:hover,
+nav li a:focus {
     color: var(--pressed-state);
 }
 
