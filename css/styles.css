@@ -49,8 +49,10 @@ header {
     display: inline;
 }
 
-.logotype {
+
+.logo {
     font-family: 'Raleway', sans-serif;
+    /* text-decoration: none; */
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -59,15 +61,8 @@ header {
     color: var(--brand-color);
 }
 
-.web {
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--brand-color);
+.color{
+    color: var(--dark);
 }
 
 :root {
@@ -271,4 +266,8 @@ nav li a:focus {
     background-color: var(--pressed-state);
     color: var(--white-background);
     cursor: pointer;
+}
+
+.color-footer{
+    color: var(--light);
 }
